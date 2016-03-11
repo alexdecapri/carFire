@@ -1,0 +1,10 @@
+<div>
+  <a ui-sref="cars">Back to All Cars</a>
+  <h3>{{ car.year }} {{ car.make }} {{ car.model }}</h3>
+  <div>
+    <h4>Comments</h4>
+    <div ng-repeat="comment in comments">
+      {{ comment.text }}
+    </div>
+  </div>
+</div>
