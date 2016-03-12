@@ -2,9 +2,9 @@
   <h3>Cars</h3>
 
   <div ng-repeat="car in cars">
-    <a ui-sref="car({carId:car.$id})">{{ car.year }} {{ car.make }} {{ car.model }}</a>
-    <span>Mileage: {{ car.mileage }}</span>
-    <span>Price: {{ car.price }}</span>
+    Car: <a ui-sref="car({carId:car.$id})">{{ car.year }} {{ car.make }} {{ car.model }}</a>
+    <div>Mileage: {{ car.mileage }}</div>
+    <div>Price: {{ car.price }}</div><br />
   </div>
 
 

@@ -7,11 +7,12 @@ app.service("carsService", function() {
   };
 
   this.getCar = function(carId) {
+    return new Firebase("https://devmtn-car-fire.firebaseio.com/cars" + "/" + carId);
 
   };
 
   this.getComments = function(carId) {
-
+    return new Firebase("https://devmtn-car-fire.firebaseio.com/comments" + "/" + carId);
   };
 
 });
