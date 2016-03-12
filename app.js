@@ -4,7 +4,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state("cars", {
       url: "/cars",
-      templateUrl: "cars.html",
+      templateUrl: "views/cars/cars.html",
       controller: "carsCtrl",
       resolve: {
         //creating a variable carsRef
@@ -16,7 +16,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
     .state("car", {
       url: "/cars/:cardId",
-      templateUrl: "carId.html",
+      templateUrl: "views/car/carId.html",
       controller: "carCtrl",
       resolve: {
         carRef: function(carsService, $stateParams) {
