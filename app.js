@@ -15,7 +15,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
 
     .state("car", {
-      url: "/cars/:cardId"
+      url: "/cars/:cardId",
       templateUrl: "carId.html",
       controller: "carCtrl",
       resolve: {
