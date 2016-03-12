@@ -3,15 +3,14 @@ var app = angular.module("carFire");
 app.service("carsService", function() {
 
   this.getCars = function() {
+    return new Firebase("https://devmtn-car-fire.firebaseio.com/cars");
+  };
+
+  this.getCar = function(carId) {
 
   };
 
-  //does carId go here or inside anon. function?
-  this.getCar(carId) = function() {
-
-  };
-
-  this.getComments(carId) = function() {
+  this.getComments = function(carId) {
 
   };
 
