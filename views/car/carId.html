@@ -4,7 +4,8 @@
   <div>
     <h4>Comments</h4>
     <div ng-repeat="comment in comments">
-      {{ comment.text }}
+      {{ comment.$value }}  <!--comment.text wasn't what I needed after dev tooling $scope.comment-->
     </div>
+    <input type="text" placeholder="Write something!" ng-model="newComment.text" /><button ng-click="addComment(newComment.text)">+</button>
   </div>
 </div>

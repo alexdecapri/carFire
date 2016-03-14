@@ -2,9 +2,31 @@
   <h3>Cars</h3>
 
   <div ng-repeat="car in cars">
+    <!--don't really understand this ui-sref-->
     Car: <a ui-sref="car({carId:car.$id})">{{ car.year }} {{ car.make }} {{ car.model }}</a>
     <div>Mileage: {{ car.mileage }}</div>
     <div>Price: {{ car.price }}</div><br />
+  </div>
+  <div>
+    <h4>Add a Car</h4>
+    <div>
+      Year: <input type="text" ng-model="newCar.year" />
+		</div>
+		<div>
+			Make: <input type="text" ng-model="newCar.make" />
+		</div>
+		<div>
+			Model: <input type="text" ng-model="newCar.model" />
+		</div>
+		<div>
+			Mileage: <input type="text" ng-model="newCar.mileage" />
+		</div>
+		<div>
+			Price: <input type="text" ng-model="newCar.price" />
+		</div>
+		<div>
+			<button ng-click="addCar()">Add Car</button>
+		</div>
   </div>
 
 
